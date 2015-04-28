@@ -1,6 +1,6 @@
 {
   "name": "titlecase-turkish",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Converts Turkish strings to title case",
   "main": "titlecase-turkish.js",
   "files": [

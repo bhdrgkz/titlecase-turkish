@@ -8,25 +8,25 @@ function encode(input) {
   "use strict";
 
   return input
+    .replace('’', 'xxxapossrxxx')
     .replace(",", "xxxcommaxxx")
     .replace("'", "xxxapossxxx")
     .replace('"', 'xxxaposbxxx')
     .replace('+', 'Xxxplusxxx')
     .replace('-', ' xxxminusxxx ');
-    .replace('’', ' Xxxapossrxxx ');
 }
 
 function decode(input) {
   "use strict";
 
   return input
+    .replace('xxxapossrxxx', '’')
     .replace("xxxcommaxxx", ",")
     .replace("xxxapossxxx", "'")
     .replace('xxxaposbxxx', '"')
     .replace(' Xxxplusxxx ', '+')
     .replace('xxxplusxxx', '+')
     .replace(' Xxxminusxxx ', '-');
-    .replace(' Xxxapossrxxx ', '’');
 }
 
 module.exports = function (inputStr) {

@@ -1,18 +1,22 @@
-/* global describe, it */
-var assert = require('assert')
-var tcTur = require('./')
+/*jslint nomen: true, todo: true, indent: 2 */
+/*global require, module, __dirname, describe, it */
+
+var assert = require('assert');
+var tcTur  = require('./');
 
 describe('title case turkish', function () {
+  "use strict";
+
   it('should upper case a string', function () {
-    //assert.equal(tcTur(null), '')
-    assert.equal(tcTur('deneme'), 'Deneme')
-    assert.equal(tcTur('DENEME'), 'Deneme')
-    assert.equal(tcTur('deNEme'), 'Deneme')
-  })
+    // @TODO assert.equal(tcTur(null), '');
+    assert.equal(tcTur('deneme'), 'Deneme');
+    assert.equal(tcTur('DENEME'), 'Deneme');
+    assert.equal(tcTur('deNEme'), 'Deneme');
+  });
 
   it('should support spaces', function () {
     assert.equal(tcTur('Test deneme bir ki uc'), 'Test Deneme Bir Ki Uc');
-  })
+  });
 
   it('should support turkish', function () {
     assert.equal(tcTur('çomar'), 'Çomar');
@@ -39,6 +43,7 @@ describe('title case turkish', function () {
     assert.equal(tcTur('istanbul-bahçelievler\'de'), 'İstanbul-Bahçelievler\'de');
     assert.equal(tcTur('some string with-hypens, plus+signs and turkish characters çğöıüş ÇĞÖİÜŞ'),
       'Some String With-Hypens, Plus+signs And Turkish Characters Çğöıüş Çğöiüş'
-    );
-  })
-})
+      );
+  });
+
+});

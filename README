@@ -12,7 +12,8 @@ npm i titlecase-turkish
 
 ```js
 var tcaseTur = require('titlecase-turkish');
-tcaseTur('some string with-hypens, plus+signs and turkish characters çğöıüş ÇĞÖİÜŞ')
 
-// Some String With-Hypens, Plus+Signs And Turkish Characters ÇĞÖIÜŞ ÇĞÖİÜŞ
+var something = tcaseTur('some string with-hypens, plus+signs and turkish characters çğöıüş ÇĞÖİÜŞ')
+console.log(something);
+// Some String With-Hypens, Plus+Signs And Turkish Characters Çğöıüş Çğöiüş
 ```

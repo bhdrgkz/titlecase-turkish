@@ -2,7 +2,7 @@
 
 Titlecase converter for Turkish, excluding special characters.
 
-## Install
+## Installing
 
 ```sh
 npm i titlecase-turkish

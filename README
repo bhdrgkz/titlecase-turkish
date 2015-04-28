@@ -1,0 +1,18 @@
+# titlecase-turkish
+
+Titlecase converter for Turkish, excluding special characters.
+
+## Install
+
+```sh
+npm i titlecase-turkish
+```
+
+## Usage
+
+```js
+var tcaseTur = require('titlecase-turkish');
+tcaseTur('some string with-hypens, plus+signs and turkish characters çğöıüş ÇĞÖİÜŞ')
+
+// Some String With-Hypens, Plus+Signs And Turkish Characters ÇĞÖIÜŞ ÇĞÖİÜŞ
+```

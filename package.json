@@ -1,0 +1,52 @@
+{
+  "name": "titlecase-turkish",
+  "version": "1.0.0",
+  "description": "Converts Turkish strings to title case",
+  "main": "titlecase-turkish.js",
+  "files": [
+    "titlecase-turkish.js",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --bail"
+  },
+  "standard": {
+    "ignore": [
+      "coverage/**",
+      "node_modules/**",
+      "bower_components/**"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yasinaydin/titlecase-turkish.git"
+  },
+  "keywords": [
+    "cases",
+    "titlecase",
+    "title case",
+    "title-case",
+    "turkish",
+    "string"
+  ],
+  "author": {
+    "name": "Ozgur Yasin Aydin",
+    "email": "yasin@yasinaydin.net",
+    "url": "http://yasinaydin.net"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yasinaydin/titlecase-turkish/issues"
+  },
+  "homepage": "https://github.com/yasinaydin/titlecase-turkish",
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.4",
+    "pre-commit": "^1.0.7"
+  },
+  "dependencies": {
+    "lower-case": "^1.1.2",
+    "title-case": "^1.1.0"
+  }
+}

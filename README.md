@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/yasinaydin/titlecase-turkish.png)](https://travis-ci.org/yasinaydin/titlecase-turkish)
+
 # titlecase-turkish
 
 Titlecase converter for Turkish, excluding special characters.

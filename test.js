@@ -38,6 +38,7 @@ describe('title case turkish', function () {
   it('should support non-chars', function () {
     assert.equal(tcTur("REMAX'tan"), "Remax'tan");
     assert.equal(tcTur('kuleLi"den'), 'Kuleli"den');
+    assert.equal(tcTur("Startkey’den"), "Startkey’den");
     assert.equal(tcTur('sahibinden 1+1'), 'Sahibinden 1+1');
     assert.equal(tcTur('bağ-bahçe içinDe'), 'Bağ-Bahçe İçinde');
     assert.equal(tcTur('istanbul-bahçelievler\'de'), 'İstanbul-Bahçelievler\'de');

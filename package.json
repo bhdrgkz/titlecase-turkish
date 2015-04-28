@@ -1,6 +1,6 @@
 {
   "name": "titlecase-turkish",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converts Turkish strings to title case",
   "main": "titlecase-turkish.js",
   "files": [
@@ -8,8 +8,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --bail",
-    "publish": "git push && git push --tags && npm publish"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --bail"
   },
   "standard": {
     "ignore": [

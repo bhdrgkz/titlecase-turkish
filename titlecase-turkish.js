@@ -13,6 +13,7 @@ function encode(input) {
     .replace('"', 'xxxaposbxxx')
     .replace('+', 'Xxxplusxxx')
     .replace('-', ' xxxminusxxx ');
+    .replace('’', ' Xxxapossrxxx ');
 }
 
 function decode(input) {
@@ -25,6 +26,7 @@ function decode(input) {
     .replace(' Xxxplusxxx ', '+')
     .replace('xxxplusxxx', '+')
     .replace(' Xxxminusxxx ', '-');
+    .replace(' Xxxapossrxxx ', '’');
 }
 
 module.exports = function (inputStr) {

@@ -21,12 +21,16 @@ function decode(input) {
 
   return input
     .replace('xxxapossrxxx', '’')
+    .replace('Xxxapossrxxx', '’')
     .replace("xxxcommaxxx", ",")
     .replace('Xxxcommaxxx', ',')
     .replace("xxxapossxxx", "'")
+    .replace("Xxxapossxxx", "'")
     .replace('xxxaposbxxx', '"')
+    .replace('Xxxaposbxxx', '"')
     .replace(' Xxxplusxxx ', '+')
     .replace('xxxplusxxx', '+')
+    .replace('Xxxplusxxx', '+')
     .replace(' Xxxminusxxx ', '-');
 }
 

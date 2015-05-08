@@ -45,6 +45,9 @@ describe('title case turkish', function () {
     assert.equal(tcTur('some string with-hypens, plus+signs and turkish characters çğöıüş ÇĞÖİÜŞ'),
       'Some String With-Hypens, Plus+signs And Turkish Characters Çğöıüş Çğöiüş'
       );
+    assert.equal(tcTur("MECİDİYEKÖY ESENTEPE'DE ,DEKORASYONLU,OTOPARKLI ,500m2 OFİS"),
+      "Mecidiyeköy Esentepe'de ,dekorasyonlu Otoparklı 500 M 2 Ofis"
+      );
   });
 
 });

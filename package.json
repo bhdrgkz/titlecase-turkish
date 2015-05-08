@@ -1,6 +1,6 @@
 {
   "name": "titlecase-turkish",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Converts Turkish strings to title case",
   "main": "titlecase-turkish.js",
   "files": [
@@ -42,6 +42,7 @@
   "devDependencies": {
     "assert": "^1.3.0",
     "istanbul": "^0.3.13",
+    "jslint": "^0.9.0-pre006",
     "mocha": "^2.2.4",
     "pre-commit": "^1.0.7"
   },

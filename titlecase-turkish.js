@@ -3,35 +3,36 @@
 
 var lowerCase = require('lower-case');
 var titleCase = require('title-case');
-
+new RegExp;
 function encode(input) {
   "use strict";
 
   return input
-    .replace('’', 'xxxapossrxxx')
-    .replace(",", "xxxcommaxxx")
-    .replace("'", "xxxapossxxx")
-    .replace('"', 'xxxaposbxxx')
-    .replace('+', 'Xxxplusxxx')
-    .replace('-', ' xxxminusxxx ');
+    .replace(RegExp('’ ', "g"), 'xxxapossrxxx')
+    .replace(RegExp('’', "g"), 'xxxapossrxxx')
+    .replace(RegExp(",", "g"), "xxxcommaxxx")
+    .replace(RegExp("' ", "g"), "xxxapossxxx")
+    .replace(RegExp("'", "g"), "xxxapossxxx")
+    .replace(RegExp('"', "g"), 'xxxaposbxxx')
+    .replace(RegExp("\\+", "g"), 'Xxxplusxxx')
+    .replace(RegExp('-', "g"), ' xxxminusxxx ');
 }
-
 function decode(input) {
   "use strict";
 
   return input
-    .replace('xxxapossrxxx', '’')
-    .replace('Xxxapossrxxx', '’')
-    .replace("xxxcommaxxx", ",")
-    .replace('Xxxcommaxxx', ',')
-    .replace("xxxapossxxx", "'")
-    .replace("Xxxapossxxx", "'")
-    .replace('xxxaposbxxx', '"')
-    .replace('Xxxaposbxxx', '"')
-    .replace(' Xxxplusxxx ', '+')
-    .replace('xxxplusxxx', '+')
-    .replace('Xxxplusxxx', '+')
-    .replace(' Xxxminusxxx ', '-');
+    .replace(RegExp('xxxapossrxxx', "g"), '’')
+    .replace(RegExp('Xxxapossrxxx', "g"), '’')
+    .replace(RegExp("xxxcommaxxx", "g"), ",")
+    .replace(RegExp('Xxxcommaxxx', "g"), ',')
+    .replace(RegExp("xxxapossxxx", "g"), "'")
+    .replace(RegExp("Xxxapossxxx", "g"), "'")
+    .replace(RegExp('xxxaposbxxx', "g"), '"')
+    .replace(RegExp('Xxxaposbxxx', "g"), '"')
+    .replace(RegExp(' Xxxplusxxx ', "g"), '+')
+    .replace(RegExp('xxxplusxxx', "g"), '+')
+    .replace(RegExp('Xxxplusxxx', "g"), '+')
+    .replace(RegExp(' Xxxminusxxx ', "g"), '-');
 }
 
 module.exports = function (inputStr) {
@@ -39,5 +40,3 @@ module.exports = function (inputStr) {
 
   return decode(titleCase(lowerCase(encode(inputStr), 'tr'), 'tr'));
 };
-
-
